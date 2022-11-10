@@ -1,0 +1,26 @@
+Explicar los siguientes Conceptos:
+
+1.1 Variables
+1.2 Strings
+1.3 Funciones (argumentos, return)
+1.4 Declaraciones if
+1.5 Valores booleanos (true, false)
+
+
+Explicaciones
+
+1.1 Variables.-  Son espacios que se reservan y que le nombramos con 
+identificadores para luego asignarles, una o varias veces, valores diferentes.
+
+1.2 Strings.-  Son valores que también se les conoce como cadenas de texto,
+a estos String se los debe encerrar entre comillas simples o dobles.  Ej. 'Calle #18'
+
+1.3 Funciones.-  Creamos nuestras funciones para que agrupen líneas de código y procesen u 
+operen con los valores de sus argumentos que se les pasa al momento de llamarlas por su nombre.
+También es posible crearlas hasta para que devuelvan tras su finalización un determinado Valor.
+
+1.4 Declaraciones if.-  Se usa el if acompañado de una condición(decisión) para que realice 
+algo o no o continue.
+
+1.5 Valores booleanos (true, false).-  Los valores booleanos hacen o ayudan si llevan 
+o bien un valor true(verdadero) o un valor false(falso).
