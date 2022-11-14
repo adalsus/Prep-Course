@@ -1,0 +1,47 @@
+Explicar los siguientes Conceptos:
+
+3.1a  for
+3.1b  &&, ||, !
+
+
+Explicaciones:
+
+3.1a  for.-  La declaración for permite hacer repeticiones de las intrucciones o líneas de códigos
+ que se escriban dentro de sus llaves, estas repeticiones se terminan cuando la condición 
+ da respuesta false.
+
+3.1b  &&, ||, !.-  Estos símbolos trabajan con valores tipo boolean (true y false), es decir, 
+ los dos primeros símbolo entre valores booleanos y devuelve una respuesta booleana.  
+ Ejemplo:  true && false su respuesta es false;
+ 
+ Y el tercer símbolo un valor booleano a su derecha y asimismo devuelve otro valor booleano.
+ Ejemplo:  !true y devuelve false.
+ 
+ Las respuestas, de los dos primeros símbolos se rigen de acuerdo a lo siguiente:
+ Supongamos que tengo del lado izquierdo del símbolo una expresión que le llamaremos P;
+ Y en el lado derecho una expresión que le llamaremos Q, entonces:
+
+      P       &&       Q      Respuesta
+ Si  true     &&      true      true
+ Si  true     &&      false     false
+ Si  false    &&      true      false
+ Si  false    &&      false     false
+ Observación:  Solo es true cuando ambos son true
+
+      P       ||       Q      Respuesta
+ Si  true     ||      true      true
+ Si  true     ||      false     true
+ Si  false    ||      true      true
+ Si  false    ||      false     false
+ Observación:  Basta que uno de los operandos sea true para que la respuesta de true.
+ Importante:   Solo da como respuesta false cuando ambos son false.
+ 
+          P         !P          Respuesta
+ Si     true        !true         false
+ Si     false       !false        true
+ Observación:  La negación del valor booleano da como respuesta el otro booleano.
+
+          P         !!P          Respuesta
+ Si     true        !!true         true
+ Si     false       !!false        false
+ Observación:  La negación de la negación del valor booleano da como respuesta el mismo valor.
