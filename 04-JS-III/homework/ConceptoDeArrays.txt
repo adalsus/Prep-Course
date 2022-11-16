@@ -1,0 +1,28 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos 
+como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente 
+cualquier agujero en tu comprensión.
+
+Arrays.
+
+
+Explicación:
+Los Arrays.-  Son objetos que se los puede nombrar con un apodo y se les puede pasar muchos valores distintos separados 
+por comas, dentro de corchetes, al momento de declararlos o despues a través de índices de posición o con sus funciones.  Ejemplos:
+
+Crear un arreglo de 3 elementos en su declaracion:
+var lista = ['Ana',12,true];
+
+Declarar un arreglo vacío o sin elementos:
+var lista02 = [];
+
+Al arreglo declarado, de apodo o nombre, lista02 añádale, en la posición 0, un valor string:
+lista02[0] = 'OCP0120';
+
+Al mismo arreglo anterior añádele, al final, otro valor string con la funcion push():
+lista02.push('AMP0238');
+
+Al arreglo, declarado primerito, de apodo lista añádale, al inicio, un valor numérico con la función unshift():
+lista.unshift(73456);
+
+Al arreglo, declarado primerito, de apodo lista añádale, en la posición 3, un arreglo vacío:
+lista[3] = [];
