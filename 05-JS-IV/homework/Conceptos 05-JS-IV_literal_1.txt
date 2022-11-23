@@ -1,0 +1,50 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras 
+   explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	* Objetos
+	* Propiedades
+	* Métodos
+	* Bucle for…in
+	* Notación de puntos vs notación de corchetes
+
+
+Explicaciones:
+
+Objetos.-  El objeto almacena un conjunto o colección de varios tipos de datos que están ligados a un texto(apodo) clave 
+para poder extraer su valor grabado, a este par << 'texto clave':value >> se le conoce como propiedad.  A esta colección de tipos se
+la hace dentro de llaves y a su vez se les declara con un nombre o etiqueta para identificarlo.  Ejemplo:
+
+let ecuador = { 
+	'D T': 'Alfaro' ,
+	arqueros: ['Hernán Galindez', 'Moisés Ramírez', 'Alexander Domínguez'] ,
+	delanteros: ['Valencia','Estrada', 'Reasco', 'Rodríguez']  
+};
+Observación:  La etiqueta del objeto es ecuador y tiene 3 claves que son 'D T' , 'arqueros' y 'delanteros'.
+
+
+Propiedades.-  Las propiedades de los objetos son cada uno de los pares << 'clave':valor >>, el valor puede ser de cualquier tipo, o sea string, number,
+boolean, null, undefined, puede hasta ser otro objeto y otras entidades.  Por ejemplo del objeto anterior una propiedad es el par 'D T': 'Alfaro'
+
+
+Métodos.-  Mencionamos en el concepto anterior otras entidades y una de estas son los métodos que no son más que funciones expresadas dentro del
+ objeto y tratadas igual como propiedades.  Ejemplo de una funcion como una propiedad más del objeto, aumentemos al objeto denominado ecuador
+ un valor función con clave 'tactica'.
+
+ecuador['tactica'] = function nf() {  return ['uno', 'uno', 'cuatro', 'tres', 'dos'];  }; 
+
+
+Bucle for…in.-  Con este bucle podemos acceder a todos los elementos(propiedades) que agrupa el objeto, esto de acceder a todos los elementos se 
+le conoce como recorrer el objeto completamente.  Veamos como se lo usa:
+
+for (let propiedad in ecuador) {
+	console.log(propiedad + ' : ' + ecuador[propiedad]);
+}
+
+
+Notación de puntos vs notación de corchetes.-  Son convenciones o formas creadas por los desarrolladores para acceder a las propiedades del objeto,
+con la notación punto, usamos el símbolo punto para separar y que clave del objeto escojo para operar con su valor;  en cambio con la notación de 
+corchetes usamos los corchetes, de abrir y cerrar, para encerrar la clave(en string) con la que voy a operar con su valor.  Ejemplo:
+
+Con Notación de punto accedo escribiendo así  >  ecuador.arqueros;
+
+Con Notación de corchetes accedo escribiendo así  >  ecuador['arqueros'];
