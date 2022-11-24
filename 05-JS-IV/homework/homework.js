@@ -1,11 +1,17 @@
 // No cambies los nombres de las funciones.
 
+//ESTUDIANTE: adalsus
 function crearGato (nombre, edad) {
   // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
   // Agrega una propiedad al objeto con el nombre "edad" y usa el valor definido en el argumento "edad"
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+  let gato_obj = { 'nombre':nombre };
+  gato_obj['edad'] = edad;
+  gato_obj['meow'] = function nf() {  return 'Meow!';  };
+  
+  return gato_obj;
 }
 
 function agregarPropiedad (objeto, property) {
@@ -13,6 +19,8 @@ function agregarPropiedad (objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+  objeto[property] = null;
+  return objeto;
 }
 
 function invocarMetodo (objeto, metodo) {
@@ -20,13 +28,14 @@ function invocarMetodo (objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+  return objeto[metodo]();
 }
 
 function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-
+  return objetoMisterioso['numeroMisterioso'] * 5;
 }
 
 function eliminarPropiedad (objeto, unaPropiedad) {
@@ -34,20 +43,38 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  delete objeto[unaPropiedad];
+  return objeto;
 }
 
 function nuevoUsuario (nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-
+  let usuario_obj = {};
+  usuario_obj['nombre'] = nombre;
+  usuario_obj['email'] = email;
+  usuario_obj['password'] = password;
+  return usuario_obj;
 }
 
 function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contrario, devuelve "false"
   // Tu código:
+  
+  //
+  //Corrijo lo que se pide, se presta a una confusión el valor null -> SI es un valor que se puede colocar a una clave o sea
+  //SI existe la clave pero según para el que realizó el ejercicio del test, NO existe.  Debió haber redactado de otra manera
+  //para pasar el test sin hacer trampa.  Por decirles algo así debió redactar...
+  //
+  
+  //... Devuelve true si en el objeto usuario existe la clave 'email' y false en caso de no existir(undefined) o de tener como valor el null.
+  //Tú código:
+  
+  return typeof(usuario['email']) !== 'undefined' && usuario['email'] !== null;
 }
+//ESTUDIANTE:  adalsus
 
 function tienePropiedad (objeto, propiedad) {
   // Devuelve "true" si el objeto (parámetro "objeto") tiene una propiedad (key) cuyo nombre es igual al valor del argumento "propiedad"
