@@ -1,0 +1,58 @@
+1.  En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras 
+explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+  * prototype
+  * Constructors (de Clases)
+
+
+Explicaciones:
+Prototype.-  Son simplemente mecanismos por los que los objetos de Javascript heredan(les dan o les pasan) propiedades de 
+otros objetos de Javascript y también es posible lo de la herencia porque todos pertenecen al objeto prototype que viene 
+implementado en javascript. 
+
+Ejemplo:
+Vamos a construir un objeto function que hará de Construcctor de propiedades para otros, crearemos la función constructora 
+Car de esta manera, le pusimos inciando con una C en mayúscula a Car por acuerdo entre desarrolladores:
+function Car() {
+  this.doors = 4;
+  this.maxSpeed = 240;
+  this.getSpeed = function gS() {
+    return this.maxSpeed;
+  }
+}
+Observación:  function Car() { ... } es un objeto Prototype de javascript, por lo que le podemos adicionar una propiedad de 
+la siguiente manera:
+Car.prototype.getSpeed = function pgS() {
+  return 120;
+}
+
+Ahora vamos a crear un objeto que herede estas propiedades creadas, lo hacemos escribiendo lo de acontinuación:
+let carInstance = new Car();
+Observación:  Habrás notado que se ha generado un poliformismo, o sea existe una funcion getSpeed tanto en Car como en 
+prototype, si hacemos una llamada en console.log de ese método primero lo llama si existiera en Car, en caso de no lo llama 
+al de prototype, para este ejemplo mostraría por consola el valor de 240, para verificarlo escribamos:
+console.log(carInstance.getSpeed());
+
+Si quisiéramos llamar al getSpeed de prototype, los haríamos escribiendo:
+console.log(carInstance.__proto__.getSpeed());
+
+
+
+Constructors (de Clases).-  Los construcctores de clases son justamente lo que hemos utilzado en el ejercicio anterior, o sea
+valiéndonos de la funcion constructora como también lo podemos hacer por intermedio del uso de la palabra reservada class,
+
+Construyamos como quedaría la clase usando class:
+class Car {
+  constructor() {
+    this.doors = 4;
+    this.maxSpeed = 240;
+  }
+  getSpeed() {
+    return this.maxSpeed;
+  }
+}
+
+Ahora instanciemos esta Clase, lo hacemos igual con new, nos quedaría así:
+let instanciaCar = new Car();
+
+Llamemos al método getSpeed, lo haré a través de un console.log:
+console.log(instanciaCar.getSpeed());
