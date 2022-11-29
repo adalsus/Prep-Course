@@ -1,0 +1,40 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo 
+estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu 
+comprensión.
+  *Funciones Callback
+
+
+FUNCIONES CALLBACK
+Cuando pasamos una función(objeto) como argumento y lo recibe el parámetro(objeto) de la otra función se la llama 
+Cb(callback), es como que el parámetro es una referencia de la función-objeto que recibe.
+
+//Ejercicio:
+//Declaramos y definimos, como expresión, la función objeto que hace un proceso.
+let espacea = function espa(texto_p) {
+  if (typeof(texto_p)==='string' || typeof(texto_p)==='number') {
+      if (typeof(texto_p)==='number') { texto_p += ''; }  //si el parámetro es numérico lo transforma a string
+      let vcespa='';
+      for (let c=0; c<texto_p.length; c++) {
+        if (c<texto_p.length-1) {
+          vcespa += texto_p[c] + ' ';
+        } else {
+          vcespa += texto_p[c];
+        }
+      }
+      return vcespa;
+  } else {
+    return 'No es un valor que se pueda espaciar';
+  }
+};
+
+//Definimos la función que le da los insumos o es la que le pasa valores para que procese la otra función que declaramos y 
+//definimos.
+function esteV(valor_p, cb_espa_p) {
+  return (cb_espa_p(valor_p));
+}
+
+//Comprobamos si nos funciona el cb, con algunos valores
+esteV('hola', espacea);
+esteV(2335, espacea);
+esteV(true, espacea);
+esteV('a', espacea);
