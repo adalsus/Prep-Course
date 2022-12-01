@@ -75,7 +75,8 @@
             
             
             /* _CreAdi.c */
-            .divClass {
+            /* _CreAdi.e */
+            /*.divClass {
                 position: initial;
                 left: initial;
                 transform: none;
@@ -87,15 +88,30 @@
             
             #Padre {
                 position: relative;
-            }
+            }*/
 
-            #Hijo {
+            /*#Hijo {
                 /* Centro horiozontalmente */ 
-                position: absolute;
+            /*    position: absolute;
                 top: initial;
                 left: 50%;
                 transform: translate(-50%);
+            }*/
+            
+            .divClass {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
+            
+            #thirdDiv{
+                margin-top: 4em;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+            }
+            
+            /* CreAdi.e_ */
             /* CreAdi.c_ */
             
 /* iii.B_ */
