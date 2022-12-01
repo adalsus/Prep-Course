@@ -51,9 +51,53 @@
             }
             /* ii.I_ */
             
+            
+            /* _CreAdi.a */
+            body {
+                background-image: url('img_body.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            /* CreAdi.a_ */
+            
+            /* _CreAdi.b */
+            /*div {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            
+            #thirdDiv {
+                top: 42vh;
+            }*/    
+            /* CreAdi.b_ */
+            
+            
+            /* _CreAdi.c */
+            .divClass {
+                position: initial;
+                left: initial;
+                transform: none;
+            }
 
+            #thirdDiv {
+                top: initial;
+            }    
+            
+            #Padre {
+                position: relative;
+            }
 
-
+            #Hijo {
+                /* Centro horiozontalmente */ 
+                position: absolute;
+                top: initial;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            /* CreAdi.c_ */
+            
 /* iii.B_ */
 
 
