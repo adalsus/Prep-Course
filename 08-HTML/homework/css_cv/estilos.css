@@ -1,0 +1,58 @@
+/*
+ESTUDIANTE :  adalsus
+/* 
+    Created on : 1 dic 2022, 19:22:28
+    Author     : adalsus
+*/
+
+
+#cabepagi {
+    display: flex;
+    flex-direction: column;
+}
+#hea_01d {
+    margin: auto;
+}
+
+#pie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#foo_01d {
+    margin-left: auto;
+}
+#foo_01i {
+    margin-right: auto;
+}
+
+#hea_01d {
+    font-size: xx-large;
+    font-weight: bold;
+    color: indianred;
+}
+
+#divpagi {
+    float: right;
+}
+
+#dp_sec01 {
+    display: flex;
+    flex-direction: column;
+}
+.dps01e {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#be4sec01_01h, #be5sec01_01h, #pie {
+    padding-top: 0.75em;
+}
+
+body {
+    background-image: url('../img_cv/cv_fondo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
