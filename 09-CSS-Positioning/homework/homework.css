@@ -3,36 +3,96 @@ Lección 3: Tarea de posicionamiento con CSS. Todo el trabajo debe hacerse en es
 archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 */
 
+
+/*ESTUDIANTE:  adalsus*/
+
 /* Ejercicio 1: Centrar el texto en un span */
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-
+    display: block;
+    text-align: center;
 }
 
 
 /* Ejercicio 2: Posicionar el header */
 
 /* Acá va tu código */
+#ejercicioDos {
+    display: none;
+    
+    /*La linea siguiente es para ocultar la caja osea está ahí pero no se ve...*/
+    /*visibility: hidden;*/
+}
 
 
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
+#ejercicioTres {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 200px;
+}
 
 
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
+#ejercicioCuatro  {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
 
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
+#ejercicioCinco {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 
 
 /* Ejercicio 6. */
+#ejercicioCinco {
+    flex-direction: row-reverse;
+}
+
+
+/*Ejercicio 7: Practique*/
+#ejercicioSiete {
+    /*Contenedor Padre*/
+    display: flex;
+    align-items: center;
+}
+#elementoUno {
+    /*Hijo*/
+    align-self: self-end;
+}
+#elementoDos {
+    /*Hijo*/
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: start;
+}
+#elementoTres {
+    /*Hijo*/
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: end;
+}
+#elementoCuatro {
+    /*Hijo*/
+    align-self: self-start;
+}
+
+
+/*ESTUDIANTE:  adalsus*/
