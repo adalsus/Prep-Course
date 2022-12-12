@@ -16,7 +16,7 @@ identificadores para luego asignarles, una o varias veces, valores diferentes.
 a estos String se los debe encerrar entre comillas simples o dobles.  Ej. 'Calle #18'
 
 1.3 Funciones.-  Creamos nuestras funciones para que agrupen líneas de código y procesen u 
-operen con los valores de sus argumentos que se les pasa al momento de llamarlas por su nombre.
+operen con los valores de los argumentos que se les pasa al momento de llamarlas por su nombre.
 También es posible crearlas hasta para que devuelvan tras su finalización un determinado Valor.
 
 1.4 Declaraciones if.-  Se usa el if acompañado de una condición(decisión) para que realice 
